@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using AplicativoDoTempoComBancoDeDados.Models;
+using SQLite;
 namespace AplicativoDoTempoComBancoDeDados.Helpers
 {
-    internal class SQLiteDatabaseHelper
+    public class SQLiteDatabaseHelper
     {
         readonly SQLiteAsyncConnection _conn;
 
@@ -37,7 +33,7 @@ namespace AplicativoDoTempoComBancoDeDados.Helpers
         {
             string sql = "SELECT * FROM Tempo WHERE description LIKE '%" + q + "%'";
 
-            return _conn.QueryAsync<Tempo>(t);
+            return _conn.QueryAsync<Tempo>(sql);
         }
     }
 }

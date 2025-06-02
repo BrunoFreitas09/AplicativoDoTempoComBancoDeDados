@@ -9,16 +9,29 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void txt_search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void lst_previsoes_tempo_Refreshing(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lst_previsoes_tempo_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 

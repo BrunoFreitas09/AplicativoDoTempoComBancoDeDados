@@ -1,4 +1,4 @@
-﻿﻿using MauiAppTempoSQLite.Models;
+﻿﻿using AplicativoDoTempoComBancoDeDados.Models;
 using Newtonsoft.Json.Linq;
 
 namespace AplicativoDoTempoComBancoDeDados.Services
