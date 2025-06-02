@@ -4,7 +4,7 @@ namespace AplicativoDoTempoComBancoDeDados
 {
     public partial class App : Application
     {
-        static SQLiteDatabaseHelper _db;
+        static SQLiteDatabaseHelper? _db;
         public static SQLiteDatabaseHelper Db
         {
             get
@@ -22,9 +22,12 @@ namespace AplicativoDoTempoComBancoDeDados
                 return _db;
             }
         }
+
         public App()
         {
             InitializeComponent();
+
+            MainPage = new AppShell();
         }
 
 
